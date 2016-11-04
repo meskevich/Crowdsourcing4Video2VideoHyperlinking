@@ -1,0 +1,113 @@
+<script type="text/javascript" src="http://multimediaeval.org/flashplayer/jwplayer.js"></script><script type="text/javascript" src="http://multimediaeval.org/luve/tooltip.js"></script>
+<p>&nbsp;</p>
+<link href="http://multimediaeval.org/luve/visibility.css" rel="stylesheet" type="text/css" />
+<link href="http://multimediaeval.org/luve/tooltip.css" rel="stylesheet" type="text/css" /><!-- BEGIN TOOLTIP DEFINITIONS 
+<div class="tip" id="tt-apology"><iframe src="http://multimediaeval.org/rsr/example-2-small_testset_1.html" width="100%" height="100%"><p>Your browser does not support iframes.</p></iframe></div>
+<div class="tip" id="tt-definition"><iframe src="http://multimediaeval.org/rsr/example-3-small_testset_1.html" width="100%" height="100%"><p>Your browser does not support iframes.</p></iframe></div>
+<div class="tip" id="tt-promise"><iframe src="http://multimediaeval.org/rsr/example-5-small_testset_1.html" width="100%" height="100%"><p>Your browser does not support iframes.</p></iframe></div>
+<div class="tip" id="tt-warning"><iframe src="http://multimediaeval.org/rsr/example-6-small_testset_1.html" width="100%" height="100%"><p>Your browser does not support iframes.</p></iframe></div>
+ END   TOOLTIP DEFINITIONS   -->
+<p><b>Find interesting things people say in videos</b></p>
+
+<p>Imagine that you are going to share this video on a social network such as Facebook, Twitter, etc. And you can choose a part of this video that the other users can preview while reading your sharing comment. This part of the video, which we call a <b>&quot;segment&quot;</b>, will give them an idea of what the video is about and give them a chance to watch the most interesting part of it.</p>
+<!--For the other users this part of the video, or segment, will give an idea  in order to decide for themselves whether it is interesting for them to watch the whole video.  It should be a meaningful part of the video.-->
+
+<p>This segment should be between 10 and 60 seconds long.</p>
+
+<p><b>The segment should be in the middle of speech in the video, not in the beginning (at least 1 minute after the start of the speech).</b></p>
+
+<p>Some videos were segmented beforehand <!--parts that you will watch has been selected from --> within a larger video, so do not be alarmed if the video doesn&#39;t start at the beginning (and also don&#39;t scroll back beyond the beginning of video segment).</p>
+
+<p>When you are finished with answering the questions, don&#39;t forget to click the &quot;Submit&quot; button at the bottom of the page. Thank you very much for your help!</p>
+
+<table cellpadding="10" cellspacing="10">
+	<tbody>
+		<tr>
+			<td rowspan="2">
+			<p align="center">&nbsp;</p>
+
+			<div id="container">Loading the player ...</div>
+			<script type="text/javascript"> jwplayer("container").setup({ flashplayer: "http://multimediaeval.org//flashplayer/player.swf", file: "http://petamedia.p2p-next.org/content/${}{video}", start: ${}{startSec}, duration: ${}{duration}, height: 309, width: 550 }); </script>
+
+			<p>&nbsp;</p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+			<table border="1" cellpadding="10" cellspacing="10" frame="VOID" rules="ROWS" style="border-top: 1px solid black; border-bottom: 1px solid black;">
+				<tbody>
+					<tr>
+						<td>
+						<p>We understand that work with videos is complicated, so we ask you to describe briefly what the video is about and explain what were the difficulties working with it in the text box below. Give only brief details in case you have defined a segment.</p>
+						<!--<p>We have an option of paying a bonus for excellent work only for the HITs where Questions 1-5 are answered.</p>-->
+
+						<p><textarea cols="80" name="QueryExplanation" rows="3"></textarea></p>
+
+						<p>For some videos it might be hard to define a segment that can be a good highlight of the video, so if you fail to find a good segment, please skip the Questions 1-5.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p>1) For <b>your selected segment</b>, what is the <b>start time</b> (please specify exactly in minutes and seconds)? Please pay attention to the time shown in the <b>left</b> corner of the bottom line of the video player.</p>
+
+						<p>Minute <input id="start-min" maxlength="2" name="start-min" size="2" type="text" /> Second <input id="start-sec" maxlength="2" name="start-sec" size="2" type="text" /></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p>2) For <b>your selected segment</b>, what is the <b>end time</b> (please specify exactly in minutes and seconds)? Please pay attention to the time shown in the <b>left</b> corner of the bottom line of the video player.</p>
+
+						<p>Minute <input id="end-min" maxlength="2" name="end-min" size="2" type="text" /> Second <input id="end-sec" maxlength="2" name="end-sec" size="2" type="text" /></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p>3) What was said during <b>your selected segment</b>? Please write down the <b>exact words</b> the speaker is saying (please transcribe precisely). If you are not sure what the exact word was, please write down what your think the word was and mark it with a star (for example, &#39;French president *Sarkosie was saying ...&#39; if you are not sure how to spell the name &#39;Sarkozy&#39; properly)</p>
+
+						<p><textarea cols="80" name="transcript" rows="3"></textarea></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p>4) When sharing this particular part of the video (your selected segment) on a social network, what <b>comment</b> would you add to the video to make sure that other users have an idea what the video segment is about? the comment should be a proper sentence.<br />
+						Please do not use informal internet language (such as &#39;4 u&#39; instead of &#39;for you&#39;).<br />
+						Be as objective as possible when describing the video segment and do not express your personal opinion/attitude, either positive or negative.</p>
+
+						<p><textarea cols="80" name="query-sentence" rows="3"></textarea></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<p>5) Imagine you would like to search for <b>similar video segments</b> using a search engine (such as Google, Bing, Yahoo) what would you put in the search box?</p>
+
+						<p><textarea cols="80" name="googleStyle" rows="3"></textarea></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>We understand that this work requires a lot of your time and concentration, so we would like to bonus the high-quality of your results. Please tell us your opinion about the size of bonus you deserve. Choose and justify your choice. Please keep in mind that we are carrying out non-profit university research (we can afford a maximum of 12 cents bonus, but only for really excellent responses). When making our decision on your bonus level we create a compromise between our budget and your request.</p>
+
+<table>
+	<tbody>
+		<tr>
+			<td><input id="bonus_zero" name="bonus" type="radio" value="0" /><label for="bonus_zero">0 cents</label></td>
+			<td><input id="bonus_seven" name="bonus" type="radio" value="4" /><label for="bonus_seven">4 cents</label></td>
+			<td><input id="bonus_eleven" name="bonus" type="radio" value="8" /><label for="bonus_eleven">8 cents</label></td>
+			<td><input id="bonus_twenty_one" name="bonus" type="radio" value="12" /><label for="bonus_twenty_one">12 cents (maximum)</label></td>
+		</tr>
+	</tbody>
+</table>
+
+<p><textarea cols="80" name="bonus-desc" rows="3"></textarea></p>
+
+<p>If you have any other comments on the HIT or suggestions on how to make it more clear and interesting for you, please fill in the text box below</p>
+
+<p><textarea cols="80" name="feedback" rows="3"></textarea></p>
